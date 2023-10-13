@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FF0000"> <!-- Set the background color to red (#FF0000) -->
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MANGA READER"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF" /> <!-- Set text color to white (#FFFFFF) -->
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- ScrollView -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"> <!-- Place ScrollView below the toolbar -->
+
+                <!-- Your existing content goes here -->
+                <!-- ... (the code you provided) ... -->
+
+            </ScrollView>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle1"
+                android:layout_marginStart="20dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:contentDescription="Press the image"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Berserk"
+                android:id="@+id/txtTitle1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#822009"
+                android:layout_toEndOf="@+id/imgberserk"
+                android:paddingEnd="20dp"
+            />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters1"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imghowtofight"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:202"
+                android:layout_below="@+id/txtTitle2"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription1"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imghowtofight"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters1"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imghowtofight"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/howtofight"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:contentDescription="Press the image"
+
+                android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:How To Fight"
+                android:id="@+id/txtTitle2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imghowtofight"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters3"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgRealityquest"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:106"
+                android:layout_below="@+id/txtTitle3"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription3"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgRealityquest"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters3"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgRealityquest"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/realityquest"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:contentDescription="Press the image"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:Reality Quest"
+                android:id="@+id/txtTitle3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgRealityquest"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters4"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk4"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle4"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription4"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk4"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters4"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:contentDescription="Press the image"
+
+                android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:id="@+id/txtTitle4"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgberserk4"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters5"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk5"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle5"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription5"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk5"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters5"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:contentDescription="Press the image"
+
+                android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:id="@+id/txtTitle5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgberserk5"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters6"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk6"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle6"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription6"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk6"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters6"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:id="@+id/txtTitle6"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgberserk6"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters7"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk7"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle7"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription7"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk7"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters7"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+
+                android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:id="@+id/txtTitle7"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgberserk7"
+                android:paddingEnd="20dp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtchapters8"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/imgberserk8"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Chapters:567"
+                android:layout_below="@+id/txtTitle8"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdescription8"
+                android:textSize="18sp"
+                android:text="Description:"
+                android:layout_toEndOf="@+id/imgberserk8"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtchapters8"
+                android:layout_marginStart="20dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgberserk8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/berserk"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:onClick="onImageClick"
+
+                android:focusable="true"
+                android:contentDescription="TODO" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:id="@+id/txtTitle8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/imgberserk8"
+                android:paddingEnd="20dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
