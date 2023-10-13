@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,8 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <?xml version="1.0" encoding="utf-8"?>
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -367,14 +367,14 @@
                 android:id="@+id/imgberserk6"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/berserk"
-                android:layout_marginStart="20dp"
                 android:clickable="true"
                 android:onClick="onImageClick"
+                android:src="@drawable/berserk"
 
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -424,14 +424,15 @@
                 android:id="@+id/imgberserk7"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/berserk"
-                android:layout_marginStart="20dp"
                 android:clickable="true"
-                android:onClick="onImageClick"
+                android:contentDescription="manga7 profile"
+                android:focusable="true"
 
-                android:focusable="true" />
+                android:onClick="onImageClick"
+                android:src="@drawable/berserk" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -447,7 +448,7 @@
                 />
 
 
-        </RelativeLayout>
+          </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -481,15 +482,15 @@
                 android:id="@+id/imgberserk8"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/berserk"
-                android:layout_marginStart="20dp"
                 android:clickable="true"
-                android:onClick="onImageClick"
-
+                android:contentDescription="manga8 profile"
                 android:focusable="true"
-                android:contentDescription="TODO" />
+
+                android:onClick="onImageClick"
+                android:src="@drawable/berserk" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -503,6 +504,10 @@
                 android:layout_toEndOf="@+id/imgberserk8"
                 android:paddingEnd="20dp"
                 />
+
+
         </RelativeLayout>
+
+
     </LinearLayout>
 </ScrollView>
