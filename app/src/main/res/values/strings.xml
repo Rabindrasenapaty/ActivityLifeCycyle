@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ActivityLifeCycyle</string>
     <string name="its_fun">Its fun</string>
+    <string name="mobile_number">Enter mobile number</string>
+    <string name="Password">Enter password</string>
+    <string name="Log_in">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="Register">Register</string>
 </resources>
