@@ -1,5 +1,6 @@
 package com.soumya.activitylifecycyle
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,16 +9,15 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
-class NewActivity : AppCompatActivity() , View.OnClickListener {
-
-
-
+class NewActivity : AppCompatActivity()  {
 
     lateinit var etMobileNumber:EditText
     lateinit var etPassword : EditText
     lateinit var btnLogin : Button
     lateinit var txtForgotPassword : TextView
     lateinit var txtRegister : TextView
+    val validMobileNumber = "9337247437"
+    val validPassword = "soumya"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,16 +30,31 @@ class NewActivity : AppCompatActivity() , View.OnClickListener {
         btnLogin = findViewById(R.id.btnLogin)
         txtRegister = findViewById(R.id.txtRegister)
 
-        btnLogin.setOnClickListener(this)
+
+
+        btnLogin.setOnClickListener{
+            val mobileNumber = etMobileNumber.text.toString()
+
+            val password = etPassword.text.toString()
+           if((mobileNumber == validMobileNumber) && (password == validPassword)){
+               val intent = Intent(this@NewActivity, MainActivity::class.java)
+
+               startActivity(intent)
+           }
+            else{
+               Toast.makeText( this@NewActivity,
+                   "Login failed",
+                   Toast.LENGTH_LONG
+               ).show()
+
+           }
+
+
+        }
+
     }
 
-    override fun onClick(p0: View?) {
-        Toast.makeText(
-            this@NewActivity,
-            "We clicked on the button to see this toast",
-            Toast.LENGTH_SHORT
-        ).show()
-    }
+
 
 
 }
