@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtchapters"
         android:background="@color/white"
-        android:layout_toRightOf="@+id/imgberserk"
+        android:layout_toRightOf="@+id/imgrabindra"
         android:textSize="18sp"
         android:textStyle="normal"
         android:text="Chapters:567"
@@ -22,14 +22,14 @@
         android:id="@+id/txtdescription"
         android:textSize="18sp"
         android:text="Description:"
-        android:layout_toRightOf="@+id/imgberserk"
+        android:layout_toRightOf="@+id/imgrabindra"
         android:textStyle="bold"
         android:layout_below="@+id/txtchapters"
         android:layout_marginLeft="20dp"/>
 
 
     <ImageView
-        android:id="@+id/imgberserk"
+        android:id="@+id/imgrabindra"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
@@ -48,13 +48,13 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/black"
-        android:layout_toRightOf="@+id/imgberserk"
+        android:layout_toRightOf="@+id/imgrabindra"
         android:paddingRight="20dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgberserk"
+        android:layout_below="@id/imgrabindra"
         android:text="More  View"
         android:backgroundTint="#2b021b"
         />

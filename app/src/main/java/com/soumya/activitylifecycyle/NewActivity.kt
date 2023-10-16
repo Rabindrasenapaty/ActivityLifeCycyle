@@ -16,8 +16,8 @@ class NewActivity : AppCompatActivity()  {
     lateinit var btnLogin : Button
     lateinit var txtForgotPassword : TextView
     lateinit var txtRegister : TextView
-    val validMobileNumber = "9337247437"
-    val validPassword = "soumya"
+    val validMobileNumber = "9437073025"
+    val validPassword = "2003"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

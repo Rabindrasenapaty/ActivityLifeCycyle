@@ -24,7 +24,7 @@
                     android:id="@+id/toolbarTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MANGA READER"
+                    android:text="LIFE READER"
                     android:layout_gravity="center"
                     android:textSize="20sp"
                     android:textColor="#FFFFFF" /> <!-- Set text color to white (#FFFFFF) -->
@@ -48,16 +48,30 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: RABINDRA"
+                android:id="@+id/txtTitle1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#822009"
+                android:layout_toEndOf="@+id/imgrabindra"
+                android:paddingEnd="20dp"
+                />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtchapters"
                 android:background="@color/white"
-                android:layout_toEndOf="@+id/imgberserk"
+                android:layout_toEndOf="@+id/imgrabindra"
                 android:textSize="18sp"
                 android:textStyle="normal"
-                android:text="Chapters:567"
+                android:text="Chapters:20"
                 android:layout_below="@+id/txtTitle1"
                 android:layout_marginStart="20dp"
             />
@@ -67,38 +81,26 @@
                 android:id="@+id/txtdescription"
                 android:textSize="18sp"
                 android:text="Description:"
-                android:layout_toEndOf="@+id/imgberserk"
+                android:layout_toEndOf="@+id/imgrabindra"
                 android:textStyle="bold"
                 android:layout_below="@+id/txtchapters"
                 android:layout_marginStart="20dp"/>
 
 
             <ImageView
-                android:id="@+id/imgberserk"
+                android:id="@+id/imgrabindra"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:src="@drawable/berserk"
+                android:src="@drawable/img2"
                 android:layout_marginStart="20dp"
                 android:clickable="true"
                 android:onClick="onImageClick"
                 android:contentDescription="Press the image"
 
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name: Berserk"
-                android:id="@+id/txtTitle1"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#822009"
-                android:layout_toEndOf="@+id/imgberserk"
-                android:paddingEnd="20dp"
-            />
+
 
 
         </RelativeLayout>
